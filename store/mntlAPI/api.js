@@ -7,13 +7,13 @@ function api_docs_schema_retrieve(payload) {
   return mntlAPI.get(`/api-docs/schema/`, { params: { lang: payload.lang } })
 }
 function api_v1_login_create(payload) {
-  return mntlAPI.post(`/api/v1/login/`, payload.data)
+  return mntlAPI.post(`/api/v1/login/`, payload)
 }
 function api_v1_signup_create(payload) {
-  return mntlAPI.post(`/api/v1/signup/`, payload.data)
+  return mntlAPI.post(`/api/v1/signup/`, payload)
 }
 function rest_auth_login_create(payload) {
-  return mntlAPI.post(`/rest-auth/login/`, payload.data)
+  return mntlAPI.post(`/rest-auth/login/`, payload)
 }
 function rest_auth_logout_retrieve(payload) {
   return mntlAPI.get(`/rest-auth/logout/`)
@@ -22,28 +22,28 @@ function rest_auth_logout_create(payload) {
   return mntlAPI.post(`/rest-auth/logout/`)
 }
 function rest_auth_password_change_create(payload) {
-  return mntlAPI.post(`/rest-auth/password/change/`, payload.data)
+  return mntlAPI.post(`/rest-auth/password/change/`, payload)
 }
 function rest_auth_password_reset_create(payload) {
-  return mntlAPI.post(`/rest-auth/password/reset/`, payload.data)
+  return mntlAPI.post(`/rest-auth/password/reset/`, payload)
 }
 function rest_auth_password_reset_confirm_create(payload) {
-  return mntlAPI.post(`/rest-auth/password/reset/confirm/`, payload.data)
+  return mntlAPI.post(`/rest-auth/password/reset/confirm/`, payload)
 }
 function rest_auth_registration_create(payload) {
-  return mntlAPI.post(`/rest-auth/registration/`, payload.data)
+  return mntlAPI.post(`/rest-auth/registration/`, payload)
 }
 function rest_auth_registration_verify_email_create(payload) {
-  return mntlAPI.post(`/rest-auth/registration/verify-email/`, payload.data)
+  return mntlAPI.post(`/rest-auth/registration/verify-email/`, payload)
 }
 function rest_auth_user_retrieve(payload) {
   return mntlAPI.get(`/rest-auth/user/`)
 }
 function rest_auth_user_update(payload) {
-  return mntlAPI.put(`/rest-auth/user/`, payload.data)
+  return mntlAPI.put(`/rest-auth/user/`, payload)
 }
 function rest_auth_user_partial_update(payload) {
-  return mntlAPI.patch(`/rest-auth/user/`, payload.data)
+  return mntlAPI.patch(`/rest-auth/user/`, payload)
 }
 export const apiService = {
   api_docs_schema_retrieve,
